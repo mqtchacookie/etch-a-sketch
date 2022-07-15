@@ -9,6 +9,9 @@ const content = document.querySelector('.content');
 //APPEND DIVS TO GRID
 const gridCreate = () => {
 	const itemAmount = prompt('enter less than 100');
+	if (itemAmount === '') {
+		return;
+	}
 	if (itemAmount > 100) {
 		alert('TOO MANY');
 		return;
