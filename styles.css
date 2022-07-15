@@ -1,0 +1,26 @@
+body {
+	background-color: azure;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(16, 16px);
+	grid-auto-rows: minmax(16px, 16px);
+	gap: 2px;
+}
+
+.grid-item {
+	background-color: aquamarine;
+
+	border: 2px solid;
+	border-radius: 2px;
+}
+
+.hovered {
+	background-color: beige;
+
+	transition: all 450ms;
+}
