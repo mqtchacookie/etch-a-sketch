@@ -16,6 +16,10 @@ const gridCreate = () => {
 		alert('TOO MANY');
 		return;
 	}
+	if (itemAmount <= 0) {
+		alert('invalid');
+		return;
+	}
 	const grid = document.createElement('div');
 	grid.classList.add('grid');
 	content.insertBefore(grid, promptButton);
