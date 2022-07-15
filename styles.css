@@ -13,7 +13,7 @@ body {
 	flex: 1 1 auto;
 	gap: 16px;
 }
-.grid {
+.grid-style {
 	border: 2px solid;
 	padding: 8px;
 	width: fit-content;
