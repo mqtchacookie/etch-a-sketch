@@ -1,17 +1,20 @@
 // VAR DECLARATION
-const grid = document.querySelector('.grid');
+const body = document.querySelector('body');
 const promptButton = document.querySelector('.prompt-button');
+const resetButton = document.querySelector('.reset-button');
 
 // ADD CLASSES
 
 //APPEND DIVS TO GRID
 const gridCreate = () => {
-    
 	const itemAmount = prompt('enter less than 100');
 	if (itemAmount > 100) {
 		alert('TOO MANY');
 		return;
 	}
+	const grid = document.createElement('div');
+	grid.classList.add('grid');
+	body.append(grid);
 	for (let i = 1; i <= itemAmount ** 2; i++) {
 		const div = document.createElement('div');
 		div.classList.add('grid-item');
@@ -23,6 +26,16 @@ const gridCreate = () => {
 		grid.appendChild(div);
 	}
 };
+
+//RESET FUNCTION
+const reset = () => {
+	const grid = document.querySelector('.grid');
+	grid.remove();
+};
+//RESET BUTTON
+resetButton.addEventListener('click', () => {
+	reset();
+});
 
 //BUTTON LISTENER
 promptButton.addEventListener('click', () => {

@@ -4,6 +4,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .content {
 	display: flex;
@@ -13,7 +14,7 @@ body {
 	flex: 1 1 auto;
 	gap: 16px;
 }
-.grid-style {
+.grid{
 	border: 2px solid;
 	padding: 8px;
 	width: fit-content;
@@ -37,10 +38,19 @@ body {
 	transition: all 450ms;
 }
 
-.prompt-button {
+button {
 	background-color: cadetblue;
+	width: 6rem;
+	height: 6vh;
+	border: 3px solid;
+	border-radius: 15px;
+}
+
+button:hover {
+	background-color: rgb(119, 204, 207);
 	width: 8rem;
 	height: 8vh;
-	border: 2px solid;
-	border-radius: 15px;
+	border: 3px solid;
+	border-radius: 20px;
+	transition: all 0.3s;
 }
