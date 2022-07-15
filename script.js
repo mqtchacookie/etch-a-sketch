@@ -2,6 +2,7 @@
 const body = document.querySelector('body');
 const promptButton = document.querySelector('.prompt-button');
 const resetButton = document.querySelector('.reset-button');
+const content = document.querySelector('.content');
 
 // ADD CLASSES
 
@@ -14,7 +15,7 @@ const gridCreate = () => {
 	}
 	const grid = document.createElement('div');
 	grid.classList.add('grid');
-	body.append(grid);
+	content.insertBefore(grid, promptButton);
 	for (let i = 1; i <= itemAmount ** 2; i++) {
 		const div = document.createElement('div');
 		div.classList.add('grid-item');
