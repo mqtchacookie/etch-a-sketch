@@ -19,20 +19,20 @@ body {
 	width: fit-content;
 	height: fit-content;
 	display: grid;
-	grid-template-columns: repeat(16, 16px);
+
 	grid-auto-rows: minmax(16px, 16px);
 	gap: 2px;
 }
 
 .grid-item {
-	background-color: rgb(127, 197, 255);
+	background-color: rgb(255, 255, 255);
 
 	border: 2px solid;
 	border-radius: 2px;
 }
 
 .hovered {
-	background-color: beige;
+	background-color: rgb(0, 0, 0);
 
 	transition: all 450ms;
 }

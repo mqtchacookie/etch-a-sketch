@@ -6,8 +6,9 @@ const promptButton = document.querySelector('.prompt-button');
 
 //APPEND DIVS TO GRID
 const gridCreate = () => {
+    
 	const itemAmount = prompt('enter less than 100');
-	if (itemAmount >= 100) {
+	if (itemAmount > 100) {
 		alert('TOO MANY');
 		return;
 	}
@@ -18,6 +19,7 @@ const gridCreate = () => {
 			div.classList.add('hovered');
 		});
 		grid.classList.add('grid-style');
+		grid.style['grid-template-columns'] = `repeat(${itemAmount}, 16px`;
 		grid.appendChild(div);
 	}
 };
