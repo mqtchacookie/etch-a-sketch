@@ -5,7 +5,19 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1 1 auto;
+	gap: 16px;
+}
 .grid {
+	border: 2px solid;
+	padding: 8px;
+	width: fit-content;
+	height: fit-content;
 	display: grid;
 	grid-template-columns: repeat(16, 16px);
 	grid-auto-rows: minmax(16px, 16px);
@@ -13,7 +25,7 @@ body {
 }
 
 .grid-item {
-	background-color: aquamarine;
+	background-color: rgb(127, 197, 255);
 
 	border: 2px solid;
 	border-radius: 2px;
@@ -23,4 +35,12 @@ body {
 	background-color: beige;
 
 	transition: all 450ms;
+}
+
+.prompt-button {
+	background-color: cadetblue;
+	width: 8rem;
+	height: 8vh;
+	border: 2px solid;
+	border-radius: 15px;
 }
